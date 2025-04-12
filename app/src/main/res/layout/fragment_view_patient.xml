@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:foregroundTint="#03A9F4"
+    tools:context=".patient.ViewPatientFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:layout_marginHorizontal="10dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingVertical="24dp"
+                android:paddingHorizontal="15dp"
+                android:layout_marginBottom="20dp">
+
+                <!-- Profile Image -->
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="24dp"
+                    android:backgroundTint="#2EA9BF"
+                    android:contentDescription="Profile Image"
+                    android:src="@drawable/baseline_person_24"
+                    android:scaleType="centerCrop"
+                    android:layout_marginTop="20dp"
+                    android:foregroundTint="#2F2F2F"/>
+
+                <!-- Patient Information Section -->
+                <TextView
+                    android:id="@+id/firstName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/first_name"
+                    android:textColor="#1B203C"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/lastName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/last_name"
+                    android:textColor="#1B203C"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/username"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/email"
+                    android:textColor="#1B203C"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/address"
+                    android:textColor="#1B203C"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/phone"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/phone_num"
+                    android:textSize="18sp"
+                    android:textColor="#1B203C" />
+
+                <TextView
+                    android:id="@+id/dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/dob"
+                    android:textColor="#262E59"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/gender"
+                    android:textColor="#1B203C"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/bloodType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/blood_type"
+                    android:textColor="#1B203C"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/height"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/height"
+                    android:textColor="#1B203C"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/weight"
+                    android:textColor="#1B203C"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/allergies"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="16dp"
+                    android:text="@string/allergies"
+                    android:textColor="#1B203C"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/emergencyContact"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="24dp"
+                    android:text="@string/emergency_contact"
+                    android:textColor="#1B203C"
+                    android:textSize="18sp" />
+
+                <!-- Action Buttons -->
+                <Button
+                    android:id="@+id/addApptBtn"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="16dp"
+                    android:backgroundTint="#4F8A85"
+                    android:paddingTop="12dp"
+                    android:paddingBottom="12dp"
+                    android:text="@string/addApptBtn"
+                    android:textColor="#F0F0F0"
+
+                    android:textSize="18sp" />
+
+<!--                <Button-->
+<!--                    android:id="@+id/addConsultationBtn"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:background="@drawable/button_styles"-->
+<!--                    android:text="Add Consultation"-->
+<!--                    android:textColor="#F0F0F0"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:layout_marginBottom="16dp"-->
+<!--                    android:layout_gravity="center"/>-->
+
+                <Button
+                    android:id="@+id/removePatientBtn"
+                    android:layout_width="354dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="24dp"
+                    android:backgroundTint="#A4362E"
+                    android:text="@string/remove_patient_btn"
+                    android:textColor="#F0F0F0"
+                    android:textSize="18sp" />
+
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- Floating Action Button -->
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/udpatePatientBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_margin="16dp"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/baseline_edit_24"
+        app:tint="#FFFFFF"
+        app:backgroundTint="#4C928B" />
+
+</FrameLayout>

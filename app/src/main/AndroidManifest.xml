@@ -2,6 +2,7 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.first.demo">
+
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
@@ -14,10 +15,14 @@
         android:theme="@style/Theme.Demo"
         tools:targetApi="31">
 
+        <activity
+            android:name=".ArticleDetailActivity"
+            android:exported="false" />
+
         <!-- LoginActivity should have 'android:exported="true"' because it has an intent-filter -->
-        <activity android:name=".activities.ui.login.LoginActivity"
+        <activity
+            android:name=".activities.ui.login.LoginActivity"
             android:exported="true">
-            <!-- If you want to set the activity as the launcher activity, add the intent-filter -->
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
@@ -25,7 +30,8 @@
         </activity>
 
         <!-- SplashScreenActivity should also have 'android:exported="true"' because it has an intent-filter -->
-        <activity android:name=".activities.SplashScreenActivity"
+        <activity
+            android:name=".activities.SplashScreenActivity"
             android:exported="true"
             android:theme="@style/welcome_screen">
             <intent-filter>
@@ -35,9 +41,11 @@
         </activity>
 
         <!-- MainActivity does not need android:exported if it is not intended to be started by other apps -->
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".MainActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustNothing" />
+
     </application>
 
 </manifest>

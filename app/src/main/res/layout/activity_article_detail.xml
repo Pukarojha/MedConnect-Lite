@@ -1,36 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
-    android:id="@+id/article_detail_container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:padding="16dp">
 
     <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/articleImage"
+            android:id="@+id/detailImage"
             android:layout_width="match_parent"
             android:layout_height="200dp"
-            android:scaleType="centerCrop"
-            android:contentDescription="@string/article_image" />
+            android:scaleType="centerCrop" />
 
         <TextView
-            android:id="@+id/articleTitle"
+            android:id="@+id/detailTitle"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="20sp"
+            android:textSize="22sp"
             android:textStyle="bold"
-            android:paddingTop="16dp"
-            android:text="Article Title" />
+            android:paddingTop="16dp" />
 
         <TextView
-            android:id="@+id/articleDescription"
+            android:id="@+id/detailDescription"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:paddingTop="8dp"
-            android:text="Article description goes here." />
+            android:textSize="16sp"
+            android:paddingTop="12dp" />
+
     </LinearLayout>
 </ScrollView>

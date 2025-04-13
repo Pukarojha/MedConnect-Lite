@@ -49,6 +49,7 @@ dependencies {
 
     implementation ("com.github.bumptech.glide:glide:4.15.1")  // Use the latest stable version available
     annotationProcessor ("com.github.bumptech.glide:compiler:4.15.1")
+    implementation ("com.google.android.material:material:1.7.0")
     implementation(libs.cardview)
     implementation(libs.fragment)
     implementation(libs.appcompat)
